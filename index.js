@@ -69,7 +69,7 @@ const player = new Fighter({
         },
         death: {
             imageSrc: './assets/martialhero/Sprite/Death.png',
-            framesMax: 6
+            framesMax: 11
         },
         takeHit: {
             imageSrc: './assets/martialhero/Sprite/takehit.png',
