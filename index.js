@@ -13,7 +13,7 @@ const background = new Sprite({
         x: 0,
         y: 0
     },
-    imageSrc: './assets/background.png'
+    imageSrc: './assets/background.jpg'
 })
 
 const shop = new Sprite({
@@ -39,41 +39,41 @@ const player = new Fighter({
         x: 0,
         y: 0,
     },
-    imageSrc: './assets/samuraiMack/Idle.png',
-    framesMax: 8,
+    imageSrc: './assets/martialhero/Sprite/Idle.png',
+    framesMax: 10,
     scale: 2.5,
     offset: {
-        x: 215,
-        y: 157
+        x: 50,
+        y: 20
     },
     sprites: {
         idle: {
-            imageSrc: './assets/samuraiMack/Idle.png',
-            framesMax: 8
+            imageSrc: './assets/martialhero/Sprite/Idle.png',
+            framesMax: 10
         },
         run: {
-            imageSrc: 'assets/samuraiMack/Run.png',
+            imageSrc: './assets/martialhero/Sprite/Run.png',
             framesMax: 8
         },
         jump: {
-            imageSrc: 'assets/samuraiMack/Jump.png',
-            framesMax: 2
+            imageSrc: './assets/martialhero/Sprite/Jump.png',
+            framesMax: 3
         },
         fall: {
-            imageSrc: 'assets/samuraiMack/Fall.png',
-            framesMax: 2
+            imageSrc: './assets/martialhero/Sprite/Fall.png',
+            framesMax: 3
         },
         attack1: {
-            imageSrc: 'assets/samuraiMack/Attack1.png',
+            imageSrc: './assets/martialhero/Sprite/Attack2.png',
             framesMax: 6
         },
         death: {
-            imageSrc: 'assets/samuraiMack/Death.png',
+            imageSrc: './assets/martialhero/Sprite/Death.png',
             framesMax: 6
         },
         takeHit: {
-            imageSrc: 'assets/samuraiMack/Take Hit - white.png',
-            framesMax: 4
+            imageSrc: './assets/martialhero/Sprite/takehit.png',
+            framesMax: 3
         }
     },
     attackBox: {
@@ -99,40 +99,40 @@ const enemy = new Fighter({
         x: -50,
         y: 0,
     },
-    imageSrc: './assets/kenji/Idle.png',
-    framesMax: 4,
-    scale: 2.5,
+    imageSrc: './assets/evilwizard/Sprites/Idle.png',
+    framesMax: 8,
+    scale: 4.0,
     offset: {
         x: 215,
-        y: 167
+        y: 484
     },
     sprites: {
         idle: {
-            imageSrc: './assets/kenji/Idle.png',
-            framesMax: 4
+            imageSrc: './assets/evilwizard/Sprites/Idle.png',
+            framesMax: 8
         },
         run: {
-            imageSrc: 'assets/kenji/Run.png',
+            imageSrc: './assets/evilwizard/Sprites/Run.png',
             framesMax: 8
         },
         jump: {
-            imageSrc: 'assets/kenji/Jump.png',
+            imageSrc: './assets/evilwizard/Sprites/Jump.png',
             framesMax: 2
         },
         fall: {
-            imageSrc: 'assets/kenji/Fall.png',
+            imageSrc: './assets/evilwizard/Sprites/Fall.png',
             framesMax: 2
         },
         attack1: {
-            imageSrc: 'assets/kenji/Attack1.png',
-            framesMax: 4
+            imageSrc: './assets/evilwizard/Sprites/Attack2.png',
+            framesMax: 8
         },
         death: {
-            imageSrc: 'assets/kenji/Death.png',
+            imageSrc: './assets/evilwizard/Sprites/Death.png',
             framesMax: 7
         },
         takeHit: {
-            imageSrc: 'assets/kenji/Takehit.png',
+            imageSrc: './assets/evilwizard/Sprites/takehit.png',
             framesMax: 3
         }
     },
@@ -175,7 +175,7 @@ function animate() {
     c.fillRect(0, 0, canvas.width, canvas.height)
 
     background.update()
-    shop.update()
+    //shop.update()
     c.fillStyle = 'rgba(255, 255, 255, 0.15)'
     c.fillRect(0, 0, canvas.width, canvas.height)
     player.update()
