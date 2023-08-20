@@ -10,10 +10,10 @@ const gravity = 0.7
 
 const background = new Sprite({
     position: {
-        x: 0,
-        y: 0
+        x: 50,
+        y: -220
     },
-    imageSrc: './assets/background.jpg'
+    imageSrc: './assets/background.png'
 })
 
 const shop = new Sprite({
